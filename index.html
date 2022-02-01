@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Website Navbar</title>
+</head>
+<body>
+    <!--Nav-Container-->
+    <div class="nav-container">
+        <nav class="navbar">
+           <h1 id="navbar-logo">Natura</h1>
+           <div class="menu-toggle" id="mobile-menu">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+
+           </div>
+           <ul class="nav-menu">
+               <li><a href="#" class="nav-links">Home</a></li>
+               <li><a href="#" class="nav-links">Services</a></li>
+               <li><a href="#" class="nav-links">About Us</a></li>
+               <li><a href="#" class="nav-links">Contact Us</a></li>
+               <li><a href="#" class="nav-links nav-links-btn">Sign up</a></li>
+           </ul>
+        </nav>
+    </div>
+    <!--Container-->
+     <div class="container">
+         <div class="container-left">
+          <h1 class="title">NATURA is for you</h1>
+          <p>Natura is always there to help you feel comfortable and healthy</p>
+          <button class="main-btn"><a class="a"href="">Try it</a></button>
+         </div>
+         <div class="container-right">
+         <img src="image/pic1.svg" alt="flower">
+         </div>
+     </div>
+     <!--Pop-up-->
+
+     <div class="popup" id="email-popup">
+         <div class="popup-content">
+             <span class="close-btn">&times;</span>
+             <div class="popup-content-left">
+                 <img src="image/pic2.svg" alt="" id="popup-img">
+             </div>
+             <div class="popup-content-right">
+                 <form action="/" method="GET" class="popup-form" id="form">
+                     <h1>Get started with us today! Create you account by filling out the information below</h1>
+                     <div class="form-validation">
+                         <input type="text" class="popup-input" id="name" name="name" placeholder="Enter your name">
+                         <p>Error Message</p>
+                     </div>
+                     <div class="form-validation">
+                        <input type="email" class="popup-input" id="email" name="email" placeholder="Enter your email">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="password" class="popup-input" id="password" name="password" placeholder="Enter your password">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="password" class="popup-input" id="password-confirm" name="password" placeholder="Confirm your password">
+                        <p>Error Message</p>
+                    </div>
+                    <input type="submit" class="popup-input-btn" value="Sign Up">
+                    <span class="popup-input-login">Already have an account?Login <a href="#">here</a></span>
+                 </form>
+             </div>
+         </div>
+     </div>
+    <script src="app.js"></script>
+</body>
+</html>
